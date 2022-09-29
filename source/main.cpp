@@ -7,16 +7,12 @@
 
 using namespace BSP;
 
-void cb(void){
-	can::CANlight::frame f = can::CANlight::StaticClass().readrx(1);
-    int a = 1;
-}
-
-int main(void) {
+int main(void) { 
+    // inits all boards 
     BOARD_InitBootClocks();
     BOARD_InitBootPins();
     SysTick_Config(60000);
-
+    // loop for conditionals
     while(true){
 
     }
@@ -25,6 +21,6 @@ int main(void) {
 
 extern "C" {
     void SysTick_Handler(void){
-        
+
     }
 }
