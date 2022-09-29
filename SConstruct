@@ -1,12 +1,12 @@
 #!/bin/python
 
 #file path to MKELibrary
-BSP_PATH = 'insert_mke_path_here'
+BSP_PATH = '../MKELibrary/'
 
 import os
 
-#path to ARM compiler
-GNU_PATH = 'insert_arm_compiler_path_here'
+#path to ARM compiler (check your MKELib SCons)
+GNU_PATH = SConscript(BSP_PATH+'config.txt')
 
 compileTarget = 'main'
 
